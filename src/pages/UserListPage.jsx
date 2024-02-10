@@ -47,7 +47,7 @@ const UserListPage = () => {
   }
   //console.log(users);
   return (
-    <div className=" bg-slate-100 py-5">
+    <div className=" bg-slate-100 py-3">
       <div>
         <div className=" flex justify-center">
           <div className=" w-11/12 sm:w-10/12 md:w-3/4 flex justify-between bg-gradient-to-r from-green-500 to-lime-300 p-3">
@@ -76,7 +76,7 @@ const UserListPage = () => {
             </select>
           </div>
         </div>
-        <div className=" flex justify-center py-10">
+        <div className=" flex justify-center py-5">
           <div className=" w-11/12 sm:w-10/12 md:w-3/4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {filteredUsers.map((user) => (
               <Link to={`/user/${user.id}`} key={user.id}>
